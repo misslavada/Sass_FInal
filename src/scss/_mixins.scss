@@ -1,0 +1,26 @@
+@mixin headerFonts {
+    color:$grey;
+    font-weight:400;
+    font-size:2rem;
+}
+@mixin navigation {
+    color: $orange;
+    font-weight: 400;
+    font-size: 2rem;
+}
+@mixin headline {
+    color:$white;
+    font-size:2.5em;
+    font-weight:100;
+}
+@mixin products ($qty, $margin) {
+    width: ((100% - (($qty - 1) * $margin)) / $qty);
+    &:nth-child(n) {
+        margin-bottom: $margin;
+        margin-right: $margin;
+    }
+    &:nth-child(#{$qty}n) {
+        margin-bottom: $margin;
+        margin-right: $margin;
+    }
+}

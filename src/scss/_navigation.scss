@@ -1,0 +1,31 @@
+/* NAVIGATION */
+figure {
+    width:400px;
+    height:190px;
+    background:url('../images/logo.png') no-repeat 0 50px;float:left;
+    display:block;
+    margin:0;
+}
+nav {
+    width:540px;
+    height:190px;
+    float:left;
+    text-align:right;
+        ul { 
+            list-style-type:none;
+            margin-top:95px;
+        }
+        li {
+            display:inline;
+            font-size:0.8rem;
+            margin-right:10px;
+        }
+        a {
+            @include navigation;
+            text-decoration:none;
+            letter-spacing:-0.01rem;
+        }
+        a:hover {
+            color:$white;
+        }
+}
